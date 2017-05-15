@@ -10,21 +10,43 @@
 
 <body ng-app="addressBook">
 
-	<h1>NSS Address Book</h1>
+	<div ng-controller="AddressCtrl">
 
-	<div ng-controller="ItemCtrl">
-		<h3>{{itemText}}</h3>
+		<h1>NSS Address Book</h1>
+		
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-1">
+
+				<button type="button" class="btn btn-primary btn-sm" ng-click="addAddress()">Add Address</button>
+
+			</div> <!-- .col -->
+		</div> <!-- .row -->
+
+		<div class="row">
+			<div class="col-xs-3 col-xs-1-offset col-xs-3 col-xs-3">
+				<div ng-repeat="address in addresses">
+					<div><h2 class="personName">{{address.FirstName}} {{address.LastNmae}}</h2></div>
+					<div>{{address.StreetAddress}}</div>
+					<div>{{address.City}}, {{address.State}}  {{address.Zip}}</div>
+					<div class="phone">{{address.Phone}}</div>
+				</div> <!-- .col ->>
+			</div> <!-- .col -->
+		</div> <!-- .row -->
+
 	</div> <!-- ng-controller="ItemCtrl" -->
 
 
 
   
 	<!-- 3rd party scripts -->
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/angular/angular.min.js"></script>
 
 	<!-- personal scripts -->
+	<script type="text/javascript" src="./javascripts/app.js"></script>
+	<script type="text/javascript" src="./javascripts/AppConstants.js"></script>
 	<script type="text/javascript" src="./javascripts/main.js"></script>
 
 </body>
