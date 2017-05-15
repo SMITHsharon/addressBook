@@ -36,7 +36,7 @@ In addition, the user has the option to add new address records to the Firebase 
 
 ### How To View The Screen 
 ```
-git clone 
+git clone https://github.com/SMITHsharon/addressBook.git
 cd addressBook
 cd lib
 bower install
