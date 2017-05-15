@@ -6,7 +6,7 @@ This exercise uses Angular to load JSON "address book" records from Firebase and
 In addition, the user has the option to add new address records to the Firebase database. 
 
 #### Address Book App on Launch 
-![Address Book App on Launch]()
+![Address Book App on Launch](https://raw.githubusercontent.com/SMITHsharon/addressBook/addresses/screens/Address%20Book%20App%20on%20Launch.png)
 
 #### Address Book App on Click to Add New
 ![Address Book App on Click to Add New]()
