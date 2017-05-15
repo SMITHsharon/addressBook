@@ -9,7 +9,7 @@ In addition, the user has the option to add new address records to the Firebase 
 ![Address Book App on Launch](https://raw.githubusercontent.com/SMITHsharon/addressBook/addresses/screens/Address%20Book%20App%20on%20Launch.png)
 
 #### Address Book App on Click to Add New
-![Address Book App on Click to Add New]()
+![Address Book App on Click to Add New](https://raw.githubusercontent.com/SMITHsharon/addressBook/addresses/screens/Address%20Book%20App%20%7C%20Add%20New%20Input%20Screen.png)
 
 #### Address Book App After Add
 ![Address Book App After Add]()
