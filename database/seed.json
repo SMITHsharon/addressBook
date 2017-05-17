@@ -1,0 +1,58 @@
+{
+  "addresses" : {
+    "address0" : {
+      "LastName" : "",
+      "FirstName" : "Ernie",
+      "StreetAddress" : "123 Sesame Street",
+      "City" : "TV Land",
+      "State" : "NY",
+      "Zip" : "10019",
+      "Phone" : "444.555.1234"
+    },
+    "address1" : {
+      "LastName" : "Dixon",
+      "FirstName" : "Daryl",
+      "StreetAddress" : "123 Easy Street",
+      "City" : "Atlanta",
+      "State" : "GA",
+      "Zip" : "30318",
+      "Phone" : "414.595.2689"
+    },
+    "address2" : {
+      "LastName" : "Smith",
+      "FirstName" : "Sean",
+      "StreetAddress" : "99 Whatever Street",
+      "City" : "San Fran",
+      "State" : "CA",
+      "Zip" : "94124",
+      "Phone" : "615.417.3729"
+    },
+    "address3" : {
+      "LastName" : "Smith",
+      "FirstName" : "Heather",
+      "StreetAddress" : "UT Campus",
+      "City" : "Knoxville",
+      "State" : "TN",
+      "Zip" : "37916",
+      "Phone" : "615.587.3296"
+    },
+    "address4" : {
+      "LastName" : "Foster",
+      "FirstName" : "Jodie",
+      "StreetAddress" : "8820 Wilshire Boulevard",
+      "City" : "Beverly Hills",
+      "State" : "CA",
+      "Zip" : "90211",
+      "Phone" : "310.388.3333"
+    },
+    "address5" : {
+      "LastName" : "Sanders",
+      "FirstName" : "Bernie",
+      "StreetAddress" : "332 Dirksen Senate Office Building",
+      "City" : "Washington",
+      "State" : "DC",
+      "Zip" : "20510",
+      "Phone" : "202.224.5141"
+    }
+  }
+}

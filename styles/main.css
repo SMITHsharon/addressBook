@@ -1,2 +1,25 @@
 body {
-  background-color: lightblue; }
+  background-color: #91C2F2; }
+
+.pageHeader {
+  text-align: right;
+  margin-right: 50px; }
+
+.nameCard {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-top: 3px solid #7B07F0;
+  background-color: #DAE6F2;
+  margin-top: 50px;
+  margin-left: 25px;
+  padding-left: 25px; }
+  .nameCard h4 {
+    margin-top: 35px;
+    margin-bottom: 0; }
+  .nameCard .phone {
+    margin-bottom: 35px; }
+
+.new-address-form button {
+  margin-top: 15px;
+  margin-right: 15px; }
