@@ -20,7 +20,7 @@ app.controller("AddressEditCtrl", function($location, $routeParams, $scope, Addr
 		})
 		.catch((error) => {
 			console.log("error in addNewAddress for Edit Address", error);
-		})
+		});
 	};
 
 });

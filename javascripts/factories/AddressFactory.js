@@ -67,6 +67,21 @@ console.log("resultz :: ", resultz);
 	};
 
 
-	return {getFBAddresses:getFBAddresses, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress};
+	let deletz = (id) => {
+
+		return $q ((resolve, reject) => {
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${id}.json`)
+			.then((resultz) => {
+				resolve(resultz)
+			})
+			.catch((error) => {
+				eject(error)
+			})
+		});
+	};
+
+
+	return {getFBAddresses:getFBAddresses, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress, deletz:deletz};
 
 });
+

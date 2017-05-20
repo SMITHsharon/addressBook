@@ -1,20 +1,19 @@
 <!-- <div ng-show="listAddresses"> -->
 
- <!-- <div class="row">
-	<div class="col-xs-1 col-xs-offset-10">
-		<button type="button" class="btn btn-primary btn-sm" ng-click="AddressNewCtrl">Add Address</button> -->
-	<!-- </div> .col -->
-		<!-- <button type="button" class="btn btn-primary btn-sm" ng-click="addAddress()">Add Address</button> -->
-	<!-- </div> .col -->
-<!-- </div> .row -->
-
 <div class="row">
 	<div ng-repeat="address in addresses">
-		<div class="nameCard col-xs-3 col-xs-offset-1">
+		<div class="nameCard col-xs-3">
 			<div ng-cloak><a ng-href="#!/address/view/{{address.id}}"><h4 class="personName">{{address.FirstName}} {{address.LastName}}</h4></a></div>
 			<div>{{address.StreetAddress}}</div>
 			<div>{{address.City}}, {{address.State}}  {{address.Zip}}</div>
-			<div class="phone">{{address.Phone}}</div>
+			<div class="phone">{{address.Phone}}</div>	
+
+
+			<div class="buttonDiv">
+				<button class="btn btn-danger btn-sm fa fa-trash-o pull-right" ng-click="deleteAddress(address.id)"></button>
+
+				<button class="btn btn-xs pull-right"><a ng-href="#!/address/edit/{{address.id}}">Edit</a></button>
+			</div>
 		</div> <!-- .col -->
 	</div>  <!-- ng-repeat -->
  </div>  <!-- .row -->

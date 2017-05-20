@@ -11,9 +11,11 @@
 		  <input type="text" class="form-control" id="zip" size="10" placeholder="Zip Code" ng-model="newAddress.Zip">
 		  <input type="text" class="form-control" id="phone" size="15" placeholder="Phone" ng-model="newAddress.Phone">
 
-		  <button type="button" class="btn btn-default btn-sm pull-right" ng-click="cancel()">Cancel</button>
+		  <div class="buttonDiv">
+			  <button type="button" class="btn btn-xs pull-right"><a ng-href="#!/addresses/list">Cancel</a></button>
 
-		  <button type="button" class="btn btn-primary btn-sm pull-right" ng-click="addThisAddress()">Add</button>
+			  <button type="button" class="btn btn-xs pull-right"><a ng-href="#!/address/new">Add</a></button>
+		  </div>
 		</div>
 	</div> <!-- .col -->
 </div>  <!-- .row -->
