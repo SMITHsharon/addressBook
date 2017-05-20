@@ -1,12 +1,9 @@
-app.run((FIREBASE_CONFIG) => {
-	firebase.initializeApp(FIREBASE_CONFIG);
-});
 
 
-app.controller("AddressCtrl", ($http, $q, $scope, FIREBASE_CONFIG) => {
+// app.controller("AddressCtrl", ($http, $q, $scope, FIREBASE_CONFIG) => {
 	
 	$scope.listAddresses = true;
-	$scope.addresses = [];
+	// $scope.addresses = [];
 
 
 	let getFBAddresses = () => {
@@ -30,17 +27,17 @@ app.controller("AddressCtrl", ($http, $q, $scope, FIREBASE_CONFIG) => {
 	};
 
 
-	let getAddresses = () => {
-		getFBAddresses()
-		.then((fbAddresses) => {
-			$scope.addresses = fbAddresses;
-		})
-		.catch((error) => {
-			console.log("error in getAddresses", error);
-		});
-	};
+	// let getAddresses = () => {
+	// 	getFBAddresses()
+	// 	.then((fbAddresses) => {
+	// 		$scope.addresses = fbAddresses;
+	// 	})
+	// 	.catch((error) => {
+	// 		console.log("error in getAddresses", error);
+	// 	});
+	// };
 
-	getAddresses();
+	// getAddresses();
 
 
 	let postNewAddress = (newAddress) => {
