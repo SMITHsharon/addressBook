@@ -16,11 +16,12 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 				}
 				resolve(addrezzez);
 			})
-			.catch((error) => {
-				reject(error);
+			.catch((fbError) => {
+				reject(fbError);
 			});
 		});
 	};
 
 	return {getFBAddresses:getFBAddresses};
+	
 });

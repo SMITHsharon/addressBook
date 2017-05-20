@@ -12,11 +12,11 @@
 
 	<!-- <div ng-controller="AddressCtrl"> -->
 
-	<div class="row">
+	<!-- <div class="row"> -->
 		<h1 class="pageHeader">NSS Address Book</h1>
 
 		<div ng-view></div>
-	</div>
+	<!-- </div> -->
 
 		<!-- <div ng-show="showNewAddressForm"> -->
 			<!-- <div class="row">
@@ -68,14 +68,18 @@
 	<script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/angular/angular.min.js"></script>
+  	<script type="text/javascript" src="./lib/bower_components/angular-route/angular-route.min.js"></script>
 
 	<!-- personal scripts -->
 	<script type="text/javascript" src="./javascripts/app.js"></script>
 	<script type="text/javascript" src="./javascripts/AppConfig.js"></script>
 	<script type="text/javascript" src="./javascripts/AppConstants.js"></script>
+
 	<script type="text/javascript" src="./javascripts/factories/AddressFactory.js"></script>
+
 	<script type="text/javascript" src="./javascripts/controllers/AddressesListCtrl.js"></script>
 	<script type="text/javascript" src="./javascripts/controllers/AddressNewCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/AddressEditCtrl.js"></script>
 	<script type="text/javascript" src="./javascripts/controllers/AddressViewCtrl.js"></script>
 
 </body>
