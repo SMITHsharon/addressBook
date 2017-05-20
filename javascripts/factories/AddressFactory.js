@@ -34,7 +34,7 @@ console.log("resultz :: ", resultz);
 			})
 			.catch((error) => {
 				reject("error");
-			})
+			});
 		});
 	};
 
@@ -53,6 +53,20 @@ console.log("resultz :: ", resultz);
 	};
 
 
-	return {getFBAddresses:getFBAddresses, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress};
+	let editAddress = () => {
+
+		return $q ((resolve, reject) => {
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${address.id}.json`, JSON.stringify)
+			.then((resultz) => {
+				resolve(resultz);
+			})
+			.catch((error) => {
+				reject(error);
+			});
+		});
+	};
+
+
+	return {getFBAddresses:getFBAddresses, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress};
 
 });
