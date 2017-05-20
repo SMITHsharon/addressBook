@@ -26,4 +26,3 @@ app.config(function($routeProvider) {
 
 });
 
-console.log("in AppConfig");

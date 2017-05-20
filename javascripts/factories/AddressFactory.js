@@ -22,6 +22,37 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 		});
 	};
 
-	return {getFBAddresses:getFBAddresses};
-	
+
+	let getSingleAddress = (id) => {
+
+		return $q ((resolve, reject) => {
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${id}.json`)
+			.then((resultz) => {
+console.log("resultz :: ", resultz);
+				resultz.data.id = id;
+				resolve(resultz);
+			})
+			.catch((error) => {
+				reject("error");
+			})
+		});
+	};
+
+
+	let postNewAddress = (newAddress) => {
+
+		return $q ((resolve, reject) => {
+			$http.post(`${FIREBASE_CONFIG.databaseURL}/addresses.json`, JSON.stringify(newAddress))
+			.then((resultz) => {
+				resolve(resultz);
+			})
+			.catch((error) => {
+				reject("error");
+			});
+		});
+	};
+
+
+	return {getFBAddresses:getFBAddresses, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress};
+
 });
