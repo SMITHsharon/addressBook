@@ -53,10 +53,18 @@ console.log("resultz :: ", resultz);
 	};
 
 
-	let editAddress = () => {
+	let editAddress = (thisAddress) => {
 
 		return $q ((resolve, reject) => {
-			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${address.id}.json`, JSON.stringify)
+			$http.put(`${FIREBASE_CONFIG.databaseURL}/addresses/${thisAddress.id}.json`, JSON.stringify({
+				FirstName: thisAddress.FirstName,
+				LastName: thisAddress.LastName,
+				StreetAddress: thisAddress.StreetAddress,
+				City: thisAddress.City,
+				State: thisAddress.State,
+				Zip: thisAddress.Zip,
+				Phone: thisAddress.Phone
+			}))
 			.then((resultz) => {
 				resolve(resultz);
 			})
@@ -72,11 +80,11 @@ console.log("resultz :: ", resultz);
 		return $q ((resolve, reject) => {
 			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${id}.json`)
 			.then((resultz) => {
-				resolve(resultz)
+				resolve(resultz);
 			})
 			.catch((error) => {
-				eject(error)
-			})
+				eject(error);
+			});
 		});
 	};
 

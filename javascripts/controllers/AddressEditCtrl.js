@@ -4,7 +4,6 @@ app.controller("AddressEditCtrl", function($location, $routeParams, $scope, Addr
 
 	AddressFactory.getSingleAddress($routeParams.id)
 	.then((results) => {
-		console.log("results.data :: ", results.data);
 		$scope.newAddress = results.data;
 	})
 	.catch((error) => {
