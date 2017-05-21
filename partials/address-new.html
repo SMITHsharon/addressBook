@@ -10,13 +10,13 @@
 		  <input type="text" class="form-control" id="state" size="5" placeholder="State" ng-model="newAddress.State">
 		  <input type="text" class="form-control" id="zip" size="10" placeholder="Zip Code" ng-model="newAddress.Zip">
 		  <input type="text" class="form-control" id="phone" size="15" placeholder="Phone" ng-model="newAddress.Phone">
+		</div>
 
 		  <div class="buttonDiv">
 			  <button type="button" class="btn btn-xs pull-right"><a ng-href="#!/addresses/list">Cancel</a></button>
 
-			  <button type="button" class="btn btn-xs pull-right"><a ng-href="#!/address/new">Add</a></button>
+			  <button type="button" class="btn btn-xs pull-right" ng-click="addNewAddress()">Add</button>
 		  </div>
-		</div>
 	</div> <!-- .col -->
 </div>  <!-- .row -->
 <!-- </div>  ng-show -->
