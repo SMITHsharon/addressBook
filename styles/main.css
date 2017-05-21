@@ -1,11 +1,16 @@
 body {
   background-size: cover;
-  background-image: url("/images/wallpaper.jpeg"); }
+  background-image: url("/images/wallpaper.jpeg");
+  font: 100% "Philosopher", sans-serif;
+  font-size: 1.3em; }
 
 .pageHeader {
   text-align: right;
   margin-right: 50px;
   color: #BEBBBB; }
+
+.container {
+  padding-right: 0; }
 
 .nameCard {
   border-right: 1px solid #000;
@@ -15,16 +20,23 @@ body {
   border-radius: 10px;
   background-color: #DAE6F2;
   margin-top: 50px;
-  margin-left: 25px;
+  margin-left: 70px;
   padding-left: 25px; }
-  .nameCard h4 {
+  .nameCard h3 {
     margin-top: 15px;
     margin-bottom: 0;
     color: #2F4F4F; }
   .nameCard .phone {
     margin-bottom: 0px; }
 
-.buttonDiv {
+.newAddressForm label {
+  color: #BEBBBB;
+  font-size: 2em; }
+
+.newAddressForm input {
+  background-color: #DAE6F2; }
+
+.buttonDiv, .newAddressForm.buttonDiv {
   margin-bottom: 40px; }
-  .buttonDiv button {
+  .buttonDiv button, .newAddressForm.buttonDiv button {
     margin-right: 5px; }

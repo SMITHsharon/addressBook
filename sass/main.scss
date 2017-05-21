@@ -1,8 +1,11 @@
 @import "colors";
+@import "fonts";
 
 body {
 	background-size: cover;
 	background-image: url("/images/wallpaper.jpeg");
+	font: 100% $font-stack;
+	font-size: 1.3em;
 }
 
 
@@ -13,6 +16,11 @@ body {
 }
 
 
+.container {
+	padding-right: 0;
+}
+
+// list view cards
 .nameCard {
 
 	border-right: 1px solid $black;
@@ -22,10 +30,10 @@ body {
 	border-radius: 10px;
 	background-color: $nameCardBlue;
 	margin-top: 50px;
-	margin-left: 25px;
+	margin-left: 70px;
 	padding-left: 25px;
 
-	h4 {
+	h3 {
 		margin-top: 15px;
 		margin-bottom: 0;
 		color: $darkslategray;
@@ -37,11 +45,28 @@ body {
 }
 
 
-	.buttonDiv {
-		margin-bottom: 40px;
 
-		button {
-			margin-right: 5px;
-		}
+// add new contact input form
+.newAddressForm {
+
+	label {
+		color: $heathergray;
+		font-size: 2em;
 	}
+
+	input {
+		background-color: $nameCardBlue;
+	}
+}
+
+
+
+// button styling
+.buttonDiv, .newAddressForm.buttonDiv {
+	margin-bottom: 40px;
+
+	button {
+		margin-right: 5px;
+	}
+}
 

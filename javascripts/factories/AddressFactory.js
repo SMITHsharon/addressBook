@@ -28,7 +28,6 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 		return $q ((resolve, reject) => {
 			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${id}.json`)
 			.then((resultz) => {
-console.log("resultz :: ", resultz);
 				resultz.data.id = id;
 				resolve(resultz);
 			})
@@ -78,7 +77,7 @@ console.log("resultz :: ", resultz);
 	let deletz = (id) => {
 
 		return $q ((resolve, reject) => {
-			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${id}.json`)
+			$http.delete(`${FIREBASE_CONFIG.databaseURL}/addresses/${id}.json`)
 			.then((resultz) => {
 				resolve(resultz);
 			})

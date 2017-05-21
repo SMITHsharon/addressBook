@@ -18,7 +18,6 @@ app.controller("AddressesListCtrl", function($location, $scope, AddressFactory) 
 
 	$scope.deleteAddress = (id) => {
 
-
 		AddressFactory.deletz(id)
 		.then(() => {
 			getAddresses();
