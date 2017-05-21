@@ -15,7 +15,7 @@ In addition, the user has the option to add new address records to the Firebase 
 ![AddBook1 App After Add](https://raw.githubusercontent.com/SMITHsharon/addressBook/addresses/screens/Address%20Book%20App%20After%20Adding%20New%20Address.png)
 
 #### Address Book App (Part 2) on Launch
-![AddBook2 App on Launch]()
+![AddBook2 App on Launch](https://raw.githubusercontent.com/SMITHsharon/addressBook/routz/screens/AddBook2%20App%20on%20Launch.png)
 
 #### Address Book App (Part 2) on Add New Contact
 ![AddBook2 App On Add]()
