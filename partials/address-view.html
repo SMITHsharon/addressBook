@@ -1,0 +1,18 @@
+<div class="row">
+
+	<div class="nameCard col-xs-3 col-xs-offset-3">
+
+		<div ng-cloak><h3 class="personName">{{selectedAddress.FirstName}} {{selectedAddress.LastName}}</h3></a></div>
+		<div>{{selectedAddress.StreetAddress}}</div>
+		<div>{{selectedAddress.City}}, {{selectedAddress.State}}  {{selectedAddress.Zip}}</div>
+		<div class="phone">{{selectedAddress.Phone}}</div>
+
+		<div class="buttonDiv">
+			<button class="btn btn-danger btn-sm fa fa-trash-o pull-right" ng-click="deleteAddress(address.id)"></button>
+
+			<button class="btn btn-xs pull-right"><a ng-href="#!/address/edit/{{address.id}}">Edit</a></button>
+        </div>
+
+	</div> <!-- .col -->
+	
+</div>

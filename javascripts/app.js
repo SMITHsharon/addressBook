@@ -1,1 +1,1 @@
-var app = angular.module("addressBook", []);
+var app = angular.module("addressBook", ["ngRoute"]);

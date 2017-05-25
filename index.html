@@ -3,6 +3,7 @@
 	<meta charset="UTF-8">
 	<title>NSS Address Book</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./styles/main.css">
@@ -10,53 +11,14 @@
 
 <body ng-app="addressBook">
 
-	<div ng-controller="AddressCtrl">
+ 	<div ng-include="'partials/navbar.html'"></div>
 
-		<h1 class="pageHeader">NSS Address Book</h1>
+	<h1 class="pageHeader">NSS Address Book</h1>
 
-		<div ng-show="showNewAddressForm">
-			<div class="row">
-				<div class="col-xs-4 col-xs-offset-1">
-					<div class="new-address-form form-group">
-					  <label>New Address:</label>
-					  <input type="text" class="form-control" id="fName" size="15" placeholder="First Name" ng-model="newAddress.FirstName">
-					  <input type="text" class="form-control" id="lName" size="15" placeholder="Last Name" ng-model="newAddress.LastName">  
-					  <input type="text" class="form-control" id="street" placeholder="Street Address" ng-model="newAddress.StreetAddress">
-					  <input type="text" class="form-control" id="city" size="20" placeholder="City" ng-model="newAddress.City">
-					  <input type="text" class="form-control" id="state" size="5" placeholder="State" ng-model="newAddress.State">
-					  <input type="text" class="form-control" id="zip" size="10" placeholder="Zip Code" ng-model="newAddress.Zip">
-					  <input type="text" class="form-control" id="phone" size="15" placeholder="Phone" ng-model="newAddress.Phone">
-
-					  <button type="button" class="btn btn-default btn-sm pull-right" ng-click="cancel()">Cancel</button>
-
-					  <button type="button" class="btn btn-primary btn-sm pull-right" ng-click="addThisAddress()">Add</button>
-					</div>
-				</div> <!-- .col -->
-			</div> <!-- .row -->
-		</div> <!-- ng-show -->
-
-
-		<div ng-show="listAddresses">
-
-			<div class="row">
-				<div class="col-xs-1 col-xs-offset-10">
-					<button type="button" class="btn btn-primary btn-sm" ng-click="addAddress()">Add Address</button>
-				</div> <!-- .col -->
-			</div> <!-- .row -->
-
-			<div class="row">
-				<div ng-repeat="address in addresses">
-					<div class="nameCard col-xs-3 col-xs-offset-1">
-						<div><h4 class="personName">{{address.FirstName}} {{address.LastName}}</h4></div>
-						<div>{{address.StreetAddress}}</div>
-						<div>{{address.City}}, {{address.State}}  {{address.Zip}}</div>
-						<div class="phone">{{address.Phone}}</div>
-					</div> <!-- .col -->
-				</div> <!-- ng-repeat -->
-			</div> <!-- .row -->
-		</div> <!-- ng-show -->
-
-	</div> <!-- ng-controller="ItemCtrl" -->
+	<div class="container">
+		<div ng-view></div>
+	</div>
+	
 
 
 	<!-- 3rd party scripts -->
@@ -64,11 +26,20 @@
 	<script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/angular/angular.min.js"></script>
+  	<script type="text/javascript" src="./lib/bower_components/angular-route/angular-route.min.js"></script>
 
 	<!-- personal scripts -->
 	<script type="text/javascript" src="./javascripts/app.js"></script>
+	<script type="text/javascript" src="./javascripts/AppConfig.js"></script>
 	<script type="text/javascript" src="./javascripts/AppConstants.js"></script>
-	<script type="text/javascript" src="./javascripts/main.js"></script>
+
+	<script type="text/javascript" src="./javascripts/factories/AddressFactory.js"></script>
+
+	<script type="text/javascript" src="./javascripts/controllers/AddressesListCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/AddressNewCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/AddressEditCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/AddressViewCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/NavCtrl.js"></script>
 
 </body>
 </html>
