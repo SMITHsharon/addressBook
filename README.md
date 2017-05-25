@@ -38,6 +38,25 @@ In addition, the user has the option to add new address records to the Firebase 
 - Injected `ngRoute` into the application
 - Added `controllers`, `AddressFactory`, and `partials` to the implementation
 
+#### Address Book App (Part 3) on Launch
+![AddBook3 App on Launch](https://raw.githubusercontent.com/SMITHsharon/addressBook/auth/screens/AddBook3%20App%20on%20Launch%20Login.png)
+
+#### Address Book App (Part 3) on List Contacts | Filtered by Logged User
+![AddBook3 App On List Contacts | Filtered](https://raw.githubusercontent.com/SMITHsharon/addressBook/auth/screens/AddBook3%20App%20After%20Login%2C%20List%20Songs.png)
+
+#### Address Book App (Part 3) on List Contacts | Filtered by searchText
+![AddBook3 App List Contacts | Filtered by searchText](https://raw.githubusercontent.com/SMITHsharon/addressBook/auth/screens/AddBook3%20App%20searchText%20Filter.png)
+
+
+### Project Specs
+#### Part 3
+- Added User Auth, Registration, Login, Logout
+- Upon User Login, that user's contacts display in the Contacts List
+- Changed the `navbar` options so only relevant options appear depending on user status (logged in, or not)
+- Added `searchText` filter
+
+
+
 
 ### Technologies Used
 - `html`
