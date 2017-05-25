@@ -33,7 +33,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 		// add username
 		// login
 		AuthFactory.registerWithEmail($scope.auth).then((didRegister) => {
-			console.log("didRegister", didRegister);
+			// console.log("didRegister", didRegister);
 			$scope.auth.uid = didRegister.uid;
 			return UserFactory.addUser($scope.auth);
 		}, (error) => {
