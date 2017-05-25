@@ -1,10 +1,10 @@
-app.controller("AddressesListCtrl", function($location, $scope, AddressFactory) {
+app.controller("AddressesListCtrl", function($rootScope, $scope, AddressFactory) {
 
 	$scope.addresses = [];
 
 	let getAddresses = () => {
 
-		AddressFactory.getFBAddresses()
+		AddressFactory.getFBAddresses($rootScope.user.uid)
 		.then((fbAddrezzez) => {
 			$scope.addresses = fbAddrezzez;
 		})
@@ -28,16 +28,18 @@ app.controller("AddressesListCtrl", function($location, $scope, AddressFactory) 
 	};
 
 
-	$scope.inputChange = (address) => {
+	// not used in this app
+	// used in ToDoApp for watching/toggling change on checkbox
+	// $scope.inputChange = (address) => {
 
-		AddressFactory.editAddress(address)
-		.then(() => {
-			//
-		})
-		.catch((error) => {
-			console.log("error in inputChange", error);
-		});
-	};
+	// 	AddressFactory.editAddress(address)
+	// 	.then(() => {
+	// 		//
+	// 	})
+	// 	.catch((error) => {
+	// 		console.log("error in inputChange", error);
+	// 	});
+	// };
 
 
 });                                                                                                                                                                          

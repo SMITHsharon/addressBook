@@ -12,6 +12,9 @@ body {
 .container {
   padding-right: 0; }
 
+.textSearch {
+  margin-left: 70px; }
+
 .nameCard {
   border-right: 1px solid #000;
   border-left: 1px solid #000;
