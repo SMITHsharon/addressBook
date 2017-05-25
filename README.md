@@ -48,10 +48,14 @@ In addition, the user has the option to add new address records to the Firebase 
 ![AddBook3 App List Contacts | Filtered by searchText](https://raw.githubusercontent.com/SMITHsharon/addressBook/auth/screens/AddBook3%20App%20searchText%20Filter.png)
 
 
+#### Address Book App (Part 3) on Edit Contact 
+![AddBook3 App Edit Contact]()
+
+
 ### Project Specs
 #### Part 3
 - Added User Auth, Registration, Login, Logout
-- Upon User Login, that user's contacts display in the Contacts List
+- Upon User Login, that user's contacts display in the Contacts List, and the user's name displays on the page headers
 - Changed the `navbar` options so only relevant options appear depending on user status (logged in, or not)
 - Added `searchText` filter
 
