@@ -12,6 +12,12 @@ body {
 .container {
   padding-right: 0; }
 
+.loginContainer {
+  padding-top: 10%; }
+
+.textSearch {
+  margin-left: 70px; }
+
 .nameCard {
   border-right: 1px solid #000;
   border-left: 1px solid #000;
@@ -29,12 +35,13 @@ body {
   .nameCard .phone {
     margin-bottom: 0px; }
 
-.newAddressForm label {
-  color: #BEBBBB;
-  font-size: 2em; }
-
-.newAddressForm input {
-  background-color: #DAE6F2; }
+.newAddressForm {
+  padding-top: 50px; }
+  .newAddressForm label {
+    color: #BEBBBB;
+    font-size: 2em; }
+  .newAddressForm input {
+    background-color: #DAE6F2; }
 
 .buttonDiv, .newAddressForm.buttonDiv {
   margin-bottom: 40px; }

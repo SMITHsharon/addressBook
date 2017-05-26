@@ -20,6 +20,17 @@ body {
 	padding-right: 0;
 }
 
+
+.loginContainer {
+	padding-top: 10%;
+}
+
+
+.textSearch {
+	margin-left: 70px;
+}
+
+
 // list view cards
 .nameCard {
 
@@ -49,6 +60,8 @@ body {
 // add new contact input form
 .newAddressForm {
 
+	padding-top: 50px;
+	
 	label {
 		color: $heathergray;
 		font-size: 2em;

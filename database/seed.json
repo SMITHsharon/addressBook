@@ -7,52 +7,156 @@
       "City" : "TV Land",
       "State" : "NY",
       "Zip" : "10019",
-      "Phone" : "444.555.1234"
+      "Phone" : "444.555.1234",
+      "uid": "eotZjBFMTocDcjgvn59QScmLCk32"
     },
     "address1" : {
+      "LastName" : "",
+      "FirstName" : "Ernie",
+      "StreetAddress" : "123 Sesame Street",
+      "City" : "TV Land",
+      "State" : "NY",
+      "Zip" : "10019",
+      "Phone" : "444.555.1234",
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
+    },
+    "address2" : {
+      "LastName" : "",
+      "FirstName" : "Ernie",
+      "StreetAddress" : "123 Sesame Street",
+      "City" : "TV Land",
+      "State" : "NY",
+      "Zip" : "10019",
+      "Phone" : "444.555.1234",
+      "uid": "uhmymABmBibwqktYZycOnYvyWMD3"
+    },
+    "address3" : {
       "LastName" : "Dixon",
       "FirstName" : "Daryl",
       "StreetAddress" : "123 Easy Street",
       "City" : "Atlanta",
       "State" : "GA",
       "Zip" : "30318",
-      "Phone" : "414.595.2689"
+      "Phone" : "414.595.2689",
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
     },
-    "address2" : {
+    "address4" : {
+      "LastName" : "Dixon",
+      "FirstName" : "Daryl",
+      "StreetAddress" : "123 Easy Street",
+      "City" : "Atlanta",
+      "State" : "GA",
+      "Zip" : "30318",
+      "Phone" : "414.595.2689",
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+    },
+    "address5" : {
       "LastName" : "Smith",
       "FirstName" : "Sean",
       "StreetAddress" : "99 Whatever Street",
       "City" : "San Fran",
       "State" : "CA",
       "Zip" : "94124",
-      "Phone" : "615.417.3729"
+      "Phone" : "615.417.3729",
+      "uid": "eotZjBFMTocDcjgvn59QScmLCk32"
     },
-    "address3" : {
+    "address6" : {
+      "LastName" : "Smith",
+      "FirstName" : "Sean",
+      "StreetAddress" : "99 Whatever Street",
+      "City" : "San Fran",
+      "State" : "CA",
+      "Zip" : "94124",
+      "Phone" : "615.417.3729",
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+    },
+    "address7" : {
       "LastName" : "Smith",
       "FirstName" : "Heather",
       "StreetAddress" : "UT Campus",
       "City" : "Knoxville",
       "State" : "TN",
       "Zip" : "37916",
-      "Phone" : "615.587.3296"
+      "Phone" : "615.587.3296",
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
     },
-    "address4" : {
+    "address8" : {
       "LastName" : "Foster",
       "FirstName" : "Jodie",
       "StreetAddress" : "8820 Wilshire Boulevard",
       "City" : "Beverly Hills",
       "State" : "CA",
       "Zip" : "90211",
-      "Phone" : "310.388.3333"
+      "Phone" : "310.388.3333",
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
     },
-    "address5" : {
+    "address9" : {
+      "LastName" : "Foster",
+      "FirstName" : "Jodie",
+      "StreetAddress" : "8820 Wilshire Boulevard",
+      "City" : "Beverly Hills",
+      "State" : "CA",
+      "Zip" : "90211",
+      "Phone" : "310.388.3333",
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
+    },
+    "address10" : {
       "LastName" : "Sanders",
       "FirstName" : "Bernie",
       "StreetAddress" : "332 Dirksen Senate Office Building",
       "City" : "Washington",
       "State" : "DC",
       "Zip" : "20510",
-      "Phone" : "202.224.5141"
+      "Phone" : "202.224.5141",
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
+    },
+    "address11" : {
+      "LastName" : "Sanders",
+      "FirstName" : "Bernie",
+      "StreetAddress" : "332 Dirksen Senate Office Building",
+      "City" : "Washington",
+      "State" : "DC",
+      "Zip" : "20510",
+      "Phone" : "202.224.5141",
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+    },
+    "address12" : {
+      "LastName" : "Sanders",
+      "FirstName" : "Bernie",
+      "StreetAddress" : "332 Dirksen Senate Office Building",
+      "City" : "Washington",
+      "State" : "DC",
+      "Zip" : "20510",
+      "Phone" : "202.224.5141",
+      "uid": "uhmymABmBibwqktYZycOnYvyWMD3"
+    },
+    "address13" : {
+      "LastName" : "Sanders",
+      "FirstName" : "Bernie",
+      "StreetAddress" : "332 Dirksen Senate Office Building",
+      "City" : "Washington",
+      "State" : "DC",
+      "Zip" : "20510",
+      "Phone" : "202.224.5141",
+      "uid": "eotZjBFMTocDcjgvn59QScmLCk32"
     }
-  }
+  },
+    "users": {
+        "user0": {
+            "uid" : "eIFVAaYYbgbVoHIzHorBkagBmR83",
+            "username" : "Arya"
+        },
+        "user1": {
+            "uid" : "eotZjBFMTocDcjgvn59QScmLCk32",
+            "username" : "Heather"
+        },
+        "user2": {
+            "uid" : "uhmymABmBibwqktYZycOnYvyWMD3",
+            "username" : "Bach"
+        },
+        "user3": {
+            "uid" : "fLcg3kpOD0NtXM22TMWxUkvTmtn2",
+            "username" : "Sharon"
+        }
+    }
 }

@@ -13,8 +13,6 @@
 
  	<div ng-include="'partials/navbar.html'"></div>
 
-	<h1 class="pageHeader">NSS Address Book</h1>
-
 	<div class="container">
 		<div ng-view></div>
 	</div>
@@ -33,8 +31,11 @@
 	<script type="text/javascript" src="./javascripts/AppConfig.js"></script>
 	<script type="text/javascript" src="./javascripts/AppConstants.js"></script>
 
+	<script type="text/javascript" src="./javascripts/factories/AuthFactory.js"></script>
+	<script type="text/javascript" src="./javascripts/factories/UserFactory.js"></script>
 	<script type="text/javascript" src="./javascripts/factories/AddressFactory.js"></script>
 
+	<script type="text/javascript" src="./javascripts/controllers/AuthCtrl.js"></script>
 	<script type="text/javascript" src="./javascripts/controllers/AddressesListCtrl.js"></script>
 	<script type="text/javascript" src="./javascripts/controllers/AddressNewCtrl.js"></script>
 	<script type="text/javascript" src="./javascripts/controllers/AddressEditCtrl.js"></script>

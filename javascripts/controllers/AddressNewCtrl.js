@@ -1,6 +1,11 @@
-app.controller("AddressNewCtrl", function($http, $location, $q, $scope, FIREBASE_CONFIG, AddressFactory) {
+app.controller("AddressNewCtrl", function($http, $location, $q, $rootScope, $scope, FIREBASE_CONFIG, AddressFactory) {
 	
 	$scope.addNewAddress = () => {
+
+		// calling getUser better for getting userId than using $rootScope 
+    	// $scope.newAddress.uid = $rootScope.user.uid;
+
+    	$scope.newAddress.uid = UserFactory.getUser($rootScope.user.uid);
 
 		AddressFactory.postNewAddress($scope.newAddress)
 		.then((response) => {

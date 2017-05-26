@@ -1,11 +1,11 @@
 app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 
-	let getFBAddresses = () => {
+	let getFBAddresses = (userId) => {
 
 		let addrezzez = [];
 
 		return $q((resolve, reject) => {
-			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses.json`)
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses.json?orderBy="uid"&equalTo="${userId}"`)
 			.then((fbAddresses) => {
 				let fbAddressList = fbAddresses.data;
 				if (fbAddressList !== null) {
@@ -62,7 +62,8 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 				City: thisAddress.City,
 				State: thisAddress.State,
 				Zip: thisAddress.Zip,
-				Phone: thisAddress.Phone
+				Phone: thisAddress.Phone,
+				uid: thisAddress.uid
 			}))
 			.then((resultz) => {
 				resolve(resultz);
