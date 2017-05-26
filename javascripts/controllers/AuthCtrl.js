@@ -4,7 +4,9 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 	// 	email: "s.s@gmail.com",
 	// 	password: "123456"
 	// };
-
+	$scope.auth = {};
+	$scope.alerts = [];
+	
 	if ($location.path() === '/logout') {
 		AuthFactory.logout();
 		$rootScope.user = {};
@@ -17,6 +19,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 		AuthFactory.authenticate($scope.auth).then((userCreds) => {
 			return UserFactory.getUser(userCreds.uid);
 		}, (error) => {
+			$scope.alerts.push({msg: error.message});
 			console.log("authenticate error", error);
 		}).then((user) => {
 			$rootScope.user = user;
