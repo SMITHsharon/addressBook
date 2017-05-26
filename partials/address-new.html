@@ -15,6 +15,16 @@
 		  <input type="text" class="form-control" id="phone" size="15" placeholder="Phone" ng-model="newAddress.Phone">
 		</div>
 
+		// ui.bootstrap.Datepicker
+		<p class="input-group">
+	      <input type="date" class="form-control" uib-datepicker-popup ng-model="newAddress.Birthday" is-open="isOpened2" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+	      <span class="input-group-btn">
+	        <button type="button" class="btn btn-default" ng-click="isOpened2 = !isOpened2">
+	          <i class="glyphicon glyphicon-calendar"></i>
+	        </button>
+	      </span>
+	    </p>
+
 		  <div class="buttonDiv">
 			  <button type="button" class="btn btn-xs pull-right"><a ng-href="#!/addresses/list">Cancel</a></button>
 

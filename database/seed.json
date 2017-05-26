@@ -8,7 +8,8 @@
       "State" : "NY",
       "Zip" : "10019",
       "Phone" : "444.555.1234",
-      "uid": "eotZjBFMTocDcjgvn59QScmLCk32"
+      "uid": "eotZjBFMTocDcjgvn59QScmLCk32",
+      "Birthday": ""
     },
     "address1" : {
       "LastName" : "",
@@ -18,7 +19,8 @@
       "State" : "NY",
       "Zip" : "10019",
       "Phone" : "444.555.1234",
-      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83",
+      "Birthday": ""
     },
     "address2" : {
       "LastName" : "",
@@ -28,7 +30,8 @@
       "State" : "NY",
       "Zip" : "10019",
       "Phone" : "444.555.1234",
-      "uid": "uhmymABmBibwqktYZycOnYvyWMD3"
+      "uid": "uhmymABmBibwqktYZycOnYvyWMD3",
+      "Birthday": ""
     },
     "address3" : {
       "LastName" : "Dixon",
@@ -38,7 +41,8 @@
       "State" : "GA",
       "Zip" : "30318",
       "Phone" : "414.595.2689",
-      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83",
+      "Birthday": ""
     },
     "address4" : {
       "LastName" : "Dixon",
@@ -48,7 +52,8 @@
       "State" : "GA",
       "Zip" : "30318",
       "Phone" : "414.595.2689",
-      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2",
+      "Birthday": ""
     },
     "address5" : {
       "LastName" : "Smith",
@@ -58,7 +63,8 @@
       "State" : "CA",
       "Zip" : "94124",
       "Phone" : "615.417.3729",
-      "uid": "eotZjBFMTocDcjgvn59QScmLCk32"
+      "uid": "eotZjBFMTocDcjgvn59QScmLCk32",
+      "Birthday": ""
     },
     "address6" : {
       "LastName" : "Smith",
@@ -68,7 +74,8 @@
       "State" : "CA",
       "Zip" : "94124",
       "Phone" : "615.417.3729",
-      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2",
+      "Birthday": ""
     },
     "address7" : {
       "LastName" : "Smith",
@@ -78,7 +85,8 @@
       "State" : "TN",
       "Zip" : "37916",
       "Phone" : "615.587.3296",
-      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2",
+      "Birthday": ""
     },
     "address8" : {
       "LastName" : "Foster",
@@ -88,7 +96,8 @@
       "State" : "CA",
       "Zip" : "90211",
       "Phone" : "310.388.3333",
-      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2",
+      "Birthday": ""
     },
     "address9" : {
       "LastName" : "Foster",
@@ -98,7 +107,8 @@
       "State" : "CA",
       "Zip" : "90211",
       "Phone" : "310.388.3333",
-      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83",
+      "Birthday": ""
     },
     "address10" : {
       "LastName" : "Sanders",
@@ -108,7 +118,8 @@
       "State" : "DC",
       "Zip" : "20510",
       "Phone" : "202.224.5141",
-      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83"
+      "uid": "eIFVAaYYbgbVoHIzHorBkagBmR83",
+      "Birthday": ""
     },
     "address11" : {
       "LastName" : "Sanders",
@@ -118,7 +129,8 @@
       "State" : "DC",
       "Zip" : "20510",
       "Phone" : "202.224.5141",
-      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2"
+      "uid": "fLcg3kpOD0NtXM22TMWxUkvTmtn2",
+      "Birthday": ""
     },
     "address12" : {
       "LastName" : "Sanders",
@@ -128,7 +140,8 @@
       "State" : "DC",
       "Zip" : "20510",
       "Phone" : "202.224.5141",
-      "uid": "uhmymABmBibwqktYZycOnYvyWMD3"
+      "uid": "uhmymABmBibwqktYZycOnYvyWMD3",
+      "Birthday": ""
     },
     "address13" : {
       "LastName" : "Sanders",
@@ -138,7 +151,8 @@
       "State" : "DC",
       "Zip" : "20510",
       "Phone" : "202.224.5141",
-      "uid": "eotZjBFMTocDcjgvn59QScmLCk32"
+      "uid": "eotZjBFMTocDcjgvn59QScmLCk32",
+      "Birthday": ""
     }
   },
     "users": {
