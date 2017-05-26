@@ -3,7 +3,9 @@ app.controller("AddressNewCtrl", function($http, $location, $q, $rootScope, $sco
 	$scope.addNewAddress = () => {
 
 		// calling getUser better for getting userId than using $rootScope 
-    	$scope.newAddress.uid = $rootScope.user.uid;
+    	// $scope.newAddress.uid = $rootScope.user.uid;
+
+    	$scope.newAddress.uid = UserFactory.getUser($rootScope.user.uid);
 
 		AddressFactory.postNewAddress($scope.newAddress)
 		.then((response) => {

@@ -49,7 +49,7 @@ In addition, the user has the option to add new address records to the Firebase 
 
 
 #### Address Book App (Part 3) on Edit Contact 
-![AddBook3 App Edit Contact]()
+![AddBook3 App Edit Contact](https://raw.githubusercontent.com/SMITHsharon/addressBook/auth/screens/AddBook3%20App%20on%20Edit.png)
 
 
 ### Project Specs
