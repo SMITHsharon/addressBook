@@ -89,7 +89,13 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 	};
 
 
-	return {getFBAddresses:getFBAddresses, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress, deletz:deletz};
+	return { 
+		getFBAddresses:getFBAddresses, 
+		postNewAddress:postNewAddress, 
+		getSingleAddress:getSingleAddress, 
+		editAddress:editAddress, 
+		deletz:deletz
+	};
 
 });
 
