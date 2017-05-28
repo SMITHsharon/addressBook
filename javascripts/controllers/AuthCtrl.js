@@ -25,6 +25,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 			$rootScope.user = user;
 			$location.url('/addresses/list');
 		}).catch((error) => {
+			$scope.alerts.push({msg: error.message});
 			console.log("error on getUser", error);
 		});
 	};
@@ -40,10 +41,12 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 			$scope.auth.uid = didRegister.uid;
 			return UserFactory.addUser($scope.auth);
 		}, (error) => {
+			$scope.alerts.push({msg: error.message});
 			console.log("error on registerWithEmail", error);
 		}).then((registerComplete) => {
 			logMeIn();
 		}).catch((error) => {
+			$scope.alerts.push({msg: error.message});
 			console.log("error on addUser", error);
 		});
 	};
