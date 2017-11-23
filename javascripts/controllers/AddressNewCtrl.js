@@ -1,5 +1,7 @@
 app.controller("AddressNewCtrl", function($http, $location, $q, $rootScope, $scope, FIREBASE_CONFIG, AddressFactory, UserFactory) {
 	
+	$scope.currentPath = $location.path();
+	
 	$scope.addNewAddress = () => {
 
 		// calling getUser better for getting userId than using $rootScope 

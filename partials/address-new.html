@@ -28,7 +28,13 @@
 		  <div class="buttonDiv">
 			  <button type="button" class="btn btn-xs pull-right"><a ng-href="#!/addresses/list">Cancel</a></button>
 
-			  <button type="button" class="btn btn-xs pull-right" ng-click="addNewAddress()">Add</button>
+			  <div ng-if="currentPath == '/address/new'">
+			  	<button type="button" class="btn btn-xs pull-right" ng-click="addNewAddress()">Add</button>
+			  </div>
+
+			  <div ng-if="currentPath !== '/address/new'">
+			    <button class="btn btn-xs pull-right"><a ng-href="#!/address/edit/{{address.id}}">Update</a></button>
+		      </div>
 		  </div>
 	</div> <!-- .col -->
 </div>  <!-- .row -->
