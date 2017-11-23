@@ -67,6 +67,13 @@ app.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
 	};
 
 
-	return { isAuthenticated:isAuthenticated, authenticate:authenticate, registerWithEmail:registerWithEmail, getUser:getUser, logout:logout, authenticateGoogle:authenticateGoogle };
+	return { 
+		isAuthenticated:isAuthenticated, 
+		authenticate:authenticate, 
+		registerWithEmail:registerWithEmail, 
+		getUser:getUser, 
+		logout:logout, 
+		authenticateGoogle:authenticateGoogle
+	};
 
 });

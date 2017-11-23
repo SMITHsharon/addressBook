@@ -63,7 +63,8 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 				State: thisAddress.State,
 				Zip: thisAddress.Zip,
 				Phone: thisAddress.Phone,
-				uid: thisAddress.uid
+				uid: thisAddress.uid,
+        		Birthday: thisAddress.Birthday
 			}))
 			.then((resultz) => {
 				resolve(resultz);
@@ -89,7 +90,13 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 	};
 
 
-	return {getFBAddresses:getFBAddresses, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress, deletz:deletz};
+	return { 
+		getFBAddresses:getFBAddresses, 
+		postNewAddress:postNewAddress, 
+		getSingleAddress:getSingleAddress, 
+		editAddress:editAddress, 
+		deletz:deletz
+	};
 
 });
 
