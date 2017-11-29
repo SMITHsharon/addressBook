@@ -64,8 +64,7 @@ In addition, the user has the option to add new address records to the Firebase 
 ### Technologies Used
 - `html`
 - `css`; `SASS`
-- `JavaScript`
-- `ES6`
+- `Es6 JavaScript`
 - `Bootstrap`
 - `Angular`
 - `Grunt`
