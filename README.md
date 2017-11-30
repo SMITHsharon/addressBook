@@ -64,7 +64,7 @@ In addition, the user has the option to add new address records to the Firebase 
 - `ES6 JavaScript`
 - `Bootstrap`
 - `jQuery`
-- `Angular`
+- `AngularJS`
 - `Grunt`
 
 
